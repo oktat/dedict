@@ -16,7 +16,9 @@ public class MainConsole {
         case 1:
           System.out.println("Add");
           DataSource ds = new DataSource();
-          ds.add();
+          String hun = input("Hun: ");
+          String eng = input("Eng: ");
+          ds.add(hun, eng);
           break;
         case 2:
           System.out.println("Edit");
@@ -36,4 +38,9 @@ public class MainConsole {
       }
     }
   }
+
+  private String input(String msg) {
+    System.out.print(msg);
+    return System.console().readLine();
+  }  
 }
