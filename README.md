@@ -1,0 +1,3 @@
+# deDict
+
+Szótár
